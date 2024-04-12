@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+    
+{% block title %}Transcript List{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Transcript List</h1>
+        {% for transcript in transcript_list %}
+        <a href="{{ url_for('core.transcript', transcript_name=transcript) }}" class="transcript">{{ transcript }}</a>
+        <br>
+        {% endfor %}
+    </div>
+{% endblock %}

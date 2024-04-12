@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTTTO - Discord Ticket Tool Transcript Overview</title>
+    <style>
+    h1 {
+        text-align: center;
+        color: #7289da;
+        font-size: 24px;
+    }
+
+    body {
+        background-color: #36393f;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    a {
+        color: #7289da;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .form-floating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .form-floating input[type="email"],
+    .form-floating input[type="password"] {
+        width: 300px;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #40444b;
+        color: #fff;
+        font-size: 16px;
+    }
+    .form-floating input[type="email"]::placeholder,
+    .form-floating input[type="password"]::placeholder {
+        color: #8e9297;
+    }
+    .form-floating button[type="submit"] {
+        width: 300px;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #7289da;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .form-floating button:hover {
+        background-color: #677bc4;
+    }
+    .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+    }
+    .transcript {
+        display: block; /* Added this line */
+        background-color: #2f3136;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .transcript-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .transcript-content {
+        margin-left: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        {% include 'navigation.html' %}
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Your main content goes here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+</body>
+</html>

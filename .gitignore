@@ -1,0 +1,5 @@
+.env
+dttto/transcripts
+**/__pycache__/**
+migrations/
+instance/
